@@ -4,12 +4,23 @@
     <title>
         Test page
     </title>
-
+    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
     </head>
     <body>
+       
         <p>this is where the content of the site will go </p>
+        <button type="button" id="button1">button one</button>
 
         <script>
+            $(document).ready(function()
+            {
+                 function clickHandler()
+            {
+                $("#button1").on("click", saysomething);
+            }
+            });
+           
+
             var marco = {};
 
             marco.strenth = 10;
@@ -30,6 +41,12 @@
 
              var marco2 = clone(marco)
 
+             function saysomething()
+             {
+                console.log("fuck you")
+             }
+                var karli = {};
+             
 
         </script>
     </body>
