@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Test page
+    </title>
+
+    </head>
+    <body>
+        <p>this is where the content of the site will go </p>
+
+        <script>
+            var marco = {};
+
+            marco.strenth = 10;
+            marco.perception = 7;
+            marco.endurance = 6;
+            marco.charisma = 3;
+            marco.intelligence = 10;
+            marco.agility = 5;
+            marco.luck = 7;
+
+
+            function clone(toBeCloned) 
+            {   
+                var marcoTwo = {...toBeCloned};
+
+                return marcoTwo
+            }
+
+             var marco2 = clone(marco)
+
+
+        </script>
+    </body>
+</html>
